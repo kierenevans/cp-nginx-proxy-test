@@ -1,0 +1,15 @@
+tasks:
+  images:
+    build:
+      services:
+        web:
+          image: quay.io/inviqa_images/nginx_proxy_test
+
+  deployment:
+    deploy:
+      cluster: nginx-proxy-test
+      services:
+        web:
+          specification:
+            accessibility:
+              from_external: true
