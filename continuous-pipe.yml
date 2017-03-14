@@ -20,4 +20,4 @@ tasks:
                     key: ${INGRESS_SSL_KEY}
           specification:
             accessibility:
-              from_external: true
+              from_external: false
