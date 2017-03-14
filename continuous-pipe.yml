@@ -12,12 +12,12 @@ tasks:
         web:
           # Create an ingress endpoint so we have an HTTP load-balancer
           endpoints:
-              - name: https
-                type: NodePort
-                ssl_certificates:
-                  - name: selfsigned
-                    cert: ${INGRESS_SSL_CERT}
-                    key: ${INGRESS_SSL_KEY}
+            - name: https
+              type: NodePort
+              ssl_certificates:
+                - name: selfsigned
+                  cert: ${INGRESS_SSL_CERT}
+                  key: ${INGRESS_SSL_KEY}
           specification:
             accessibility:
               from_external: false
