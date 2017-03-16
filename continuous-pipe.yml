@@ -7,7 +7,7 @@ tasks:
 
   deployment:
     deploy:
-      cluster: nginx-proxy-test
+      cluster: nginx-proxy-test-2
       services:
         web:
           # Create an ingress endpoint so we have an HTTP load-balancer
